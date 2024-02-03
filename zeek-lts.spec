@@ -43,7 +43,7 @@ Group:          Productivity/Networking/Diagnostic
 
 License:        BSD-3-Clause
 URL:            http://zeek.org
-Source0:        https://download.zeek.org/zeek-6.0.2.tar.gz
+Source0:        https://download.zeek.org/zeek-%{version}.tar.gz
 Patch0:         install-symlink-old-cmake.patch
 Requires:       zeek-lts-core = %{version}
 Requires:       zeekctl-lts = %{version}
