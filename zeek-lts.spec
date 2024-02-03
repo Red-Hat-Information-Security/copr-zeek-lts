@@ -36,8 +36,8 @@
 # Note that some files in the distribution may carry their own copyright
 # notices.
 Name:           zeek-lts
-Version:        6.0.2
-Release:        1.1
+Version:        6.1.1
+Release:        1%{?dist}
 Summary:        Zeek is a powerful framework for network analysis and security monitoring
 Group:          Productivity/Networking/Diagnostic
 
