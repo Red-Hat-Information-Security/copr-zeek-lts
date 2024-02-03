@@ -36,7 +36,7 @@
 # Note that some files in the distribution may carry their own copyright
 # notices.
 Name:           zeek-lts
-Version:        6.1.1
+Version:        6.0.3
 Release:        1%{?dist}
 Summary:        Zeek is a powerful framework for network analysis and security monitoring
 Group:          Productivity/Networking/Diagnostic
@@ -262,7 +262,7 @@ This is an experimental version of the future client application for managing Ze
 /usr/bin/getent group zeek >/dev/null || /usr/sbin/groupadd -r zeek
 
 %prep
-%setup -n zeek-6.0.2 -q
+%setup -n zeek-%{version} -q
 # some platforms do in-source builds when using cmake. I don't really care, so just patch the error out.
 find ./ -name "ProhibitInSourceBuild.cmake" | xargs -I file sh -c 'cat /dev/null > "file"'
 
